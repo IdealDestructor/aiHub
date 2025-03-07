@@ -88,6 +88,11 @@
 </script>
 
 <style scoped>
+    /* 设置全局默认光标样式 */
+    div:not([class]), p, h2, h3, span:not(.tool-type):not(.tool-category) {
+        cursor: default;
+    }
+    
     .tool-card {
         background-color: var(--card-color);
         border-radius: 16px;
