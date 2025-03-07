@@ -229,7 +229,7 @@ export const tools = [
     url: "https://copilot.microsoft.com",
     icon: "fa-brands fa-microsoft",
     iconBg: "#107c41",
-    categories: ["办公助手", "生产力工具"],
+    categories: ["生产力工具", "办公助手"],
   },
   {
     id: "replit",
