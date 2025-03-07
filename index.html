@@ -1,21 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
   <head>
-    <meta charset="utf-8" />
-    <title>重定向到自定义域名</title>
-    <script>
-      // 检查当前URL是否为GitHub Pages默认地址
-      if (window.location.hostname.includes("github.io")) {
-        window.location.href =
-          "https://aihub.deqiang.wang" +
-          window.location.pathname.replace("/aiHub", "");
-      }
-    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AIHub | 一站式 AI 工具平台</title>
+    <script type="module" crossorigin src="/aiHub/assets/index-685fe04f.js"></script>
+    <link rel="stylesheet" href="/aiHub/assets/index-805d3392.css">
   </head>
   <body>
-    <p>
-      正在重定向到
-      <a href="https://aihub.deqiang.wang">https://aihub.deqiang.wang</a>...
-    </p>
+    <div id="app"></div>
+    
   </body>
 </html>
