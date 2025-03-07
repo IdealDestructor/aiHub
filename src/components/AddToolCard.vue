@@ -346,6 +346,7 @@ function updateCustomTool() {
 
 // 编辑工具
 function editTool(tool) {
+  showManageModal.value = false;
   isEditing.value = true;
   editingId.value = tool.id;
 
