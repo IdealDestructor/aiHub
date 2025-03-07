@@ -42,12 +42,10 @@ h1 {
   letter-spacing: 1px;
   background: conic-gradient(
     from 65deg at 50% -10%,
-    rgb(119, 173, 255) -86.58deg,
-    rgb(255, 255, 255) 69.75deg,
-    rgb(255, 181, 144) 99.21deg,
-    rgb(207, 117, 252) 203.39deg,
-    rgb(119, 173, 255) 273.42deg,
-    rgb(255, 255, 255) 429.75deg
+    rgb(0, 255, 255) -86.58deg,
+    /* Cyan */ rgb(0, 0, 255) 69.75deg,
+    /* Blue */ rgb(128, 0, 128) 203.39deg,
+    /* Purple */ rgb(0, 191, 255) 273.42deg /* Deep Sky Blue */
   );
   -webkit-background-clip: text;
   background-clip: text;
