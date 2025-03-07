@@ -40,12 +40,10 @@ h1 {
   font-size: 2.8rem;
   margin-bottom: 0.8rem;
   letter-spacing: 1px;
-  background: conic-gradient(
-    from 65deg at 50% -10%,
-    rgb(0, 255, 255) -86.58deg,
-    /* Cyan */ rgb(0, 0, 255) 69.75deg,
-    /* Blue */ rgb(128, 0, 128) 203.39deg,
-    /* Purple */ rgb(0, 191, 255) 273.42deg /* Deep Sky Blue */
+  background: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color)
   );
   -webkit-background-clip: text;
   background-clip: text;
