@@ -3,7 +3,7 @@ import vue from "@vitejs/plugin-vue";
 import path from "path";
 
 export default defineConfig({
-  base: "/aiHub/", // 显式指定基础路径
+  base: "/", // 显式指定基础路径
   plugins: [vue()],
   resolve: {
     alias: {
@@ -28,5 +28,5 @@ export default defineConfig({
   },
   optimizeDeps: {
     include: ["vue", "vue-router", "pinia"], // 预构建这些频繁使用的包
-  }
+  },
 });
