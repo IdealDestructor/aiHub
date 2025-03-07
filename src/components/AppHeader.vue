@@ -6,13 +6,13 @@
         <h1 class="app-title">AIHub</h1>
       </router-link>
     </div>
-    <p>一站式访问所有顶尖 AI 工具</p>
   </header>
 </template>
 
 <style scoped>
 header {
   text-align: center;
+  margin-top: 1.5rem;
   margin-bottom: 2.5rem;
   position: relative;
   display: flex;
@@ -60,6 +60,7 @@ h1 {
 p {
   color: var(--text-secondary);
   font-size: 1.2rem;
+  font-weight: 100;
   margin-top: 0.8rem;
 }
 
