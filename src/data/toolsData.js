@@ -58,7 +58,7 @@ export const tools = [
     url: "https://gemini.google.com",
     icon: "fa-solid fa-gem",
     iconBg: "#4285f4",
-    categories: ["多模态", "图像生成", "聊天对话"],
+    categories: ["图像生成", "聊天对话", "内容创作"],
   },
   {
     id: "sd3",
@@ -78,7 +78,7 @@ export const tools = [
     url: "https://midjourney.com",
     icon: "fa-solid fa-paintbrush",
     iconBg: "#ff6b6b",
-    categories: ["艺术创作", "设计工具", "图像生成"],
+    categories: ["图像生成", "设计工具"],
   },
   {
     id: "perplexity",
@@ -108,7 +108,7 @@ export const tools = [
     url: "https://labs.openai.com",
     icon: "fa-solid fa-image",
     iconBg: "#10a37f",
-    categories: ["图像生成", "创意设计"],
+    categories: ["图像生成", "设计工具"],
   },
   {
     id: "stablediffusion",
@@ -118,7 +118,7 @@ export const tools = [
     url: "https://stability.ai/stable-diffusion",
     icon: "fa-solid fa-palette",
     iconBg: "#6c5ce7",
-    categories: ["图像生成", "创意设计"],
+    categories: ["图像生成", "设计工具"],
   },
   {
     id: "doubao",
@@ -128,7 +128,7 @@ export const tools = [
     url: "https://www.doubao.com/chat/",
     icon: "fa-solid fa-mask",
     iconBg: "#ff6b6b",
-    categories: ["聊天对话", "写作助手"],
+    categories: ["聊天对话", "写作助手", "学习工具"],
   },
   {
     id: "runwayml",
@@ -137,7 +137,7 @@ export const tools = [
     url: "https://runway.ml",
     icon: "fa-solid fa-film",
     iconBg: "#ef4444",
-    categories: ["视频处理", "创意设计"],
+    categories: ["视频制作", "设计工具"],
   },
   {
     id: "cohere",
@@ -146,7 +146,7 @@ export const tools = [
     url: "https://cohere.com",
     icon: "fa-solid fa-keyboard",
     iconBg: "#3b82f6",
-    categories: ["写作助手", "商业应用"],
+    categories: ["写作助手", "生产力工具"],
   },
   {
     id: "character-ai",
@@ -155,7 +155,7 @@ export const tools = [
     url: "https://character.ai",
     icon: "fa-solid fa-masks-theater",
     iconBg: "#a78bfa",
-    categories: ["聊天对话", "创意工具", "娱乐服务"],
+    categories: ["聊天对话", "娱乐服务"],
   },
   {
     id: "wenxin",
@@ -229,7 +229,7 @@ export const tools = [
     url: "https://copilot.microsoft.com",
     icon: "fa-brands fa-microsoft",
     iconBg: "#107c41",
-    categories: ["办公助手", "生产力工具", "创意工具"],
+    categories: ["办公助手", "生产力工具"],
   },
   {
     id: "replit",
@@ -295,7 +295,6 @@ export const allCategories = [
   "图像生成",
   "中文优化",
   "文档处理",
-  "艺术创作",
   "视频制作",
   "音频制作",
   "语音合成",
@@ -303,13 +302,9 @@ export const allCategories = [
   "编程开发",
   "生产力工具",
   "办公助手",
-  "营销工具",
   "设计工具",
-  "教育工具",
-  "语言学习",
   "学习工具",
   "开源工具",
-  "创意工具",
   "内容创作",
   "搜索引擎",
   "社交助手",
