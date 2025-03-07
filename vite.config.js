@@ -1,10 +1,29 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import path from "path";
+import fs from "fs";
+
+// 检测是否使用自定义域名
+const isCustomDomain = process.env.CUSTOM_DOMAIN === "true";
 
 export default defineConfig({
-  base: "/aiHub", // 自定义域名使用根路径
-  plugins: [vue()],
+  base: isCustomDomain ? "/" : "/aiHub/", // 根据环境动态设置基础路径
+  plugins: [
+    vue(),
+    {
+      name: "add-redirect",
+      closeBundle() {
+        // 非自定义域名环境时添加重定向
+        if (!isCustomDomain) {
+          const redirectContent = fs.readFileSync(
+            "public/redirect.html",
+            "utf-8"
+          );
+          fs.writeFileSync("dist/index.html", redirectContent);
+        }
+      },
+    },
+  ],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),

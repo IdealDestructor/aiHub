@@ -22,7 +22,9 @@ jobs:
         run: npm install
 
       - name: Build project
-        run: npm run build # 确保在 package.json 中有定义 build 脚本
+        run: npm run build
+        env:
+          CUSTOM_DOMAIN: ${{ secrets.CUSTOM_DOMAIN || 'false' }}
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
