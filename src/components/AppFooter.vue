@@ -19,7 +19,7 @@
           >
             <i class="fab fa-github"></i>
           </a>
-          <a href="/about" class="footer-link">关于</a>
+          <router-link to="/about" class="footer-link">关于</router-link>
           <router-link to="/privacy" class="footer-link">隐私政策</router-link>
         </div>
       </div>
