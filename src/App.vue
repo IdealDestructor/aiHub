@@ -5,11 +5,11 @@
       <router-view />
       <footer>
         <p>
-          © {{ new Date().getFullYear() }} AIHub |
+          © {{ new Date().getFullYear() }} AIHub By
           <a
             href="https://github.com/IdealDestructor"
             style="color: white; text-decoration: none"
-            >~IDEAL()</a
+            >Francis</a
           >
         </p>
         <nav class="footer-nav">
