@@ -4,7 +4,7 @@ import path from "path";
 import { visualizer } from "rollup-plugin-visualizer";
 
 export default defineConfig({
-  base: "/aiHub/", // 显式指定基础路径
+  base: "/", // 显式指定基础路径
   plugins: [
     vue(),
     visualizer({
