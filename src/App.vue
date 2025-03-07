@@ -1,5 +1,6 @@
 <template>
     <div class="app">
+        <ParticleBackground />
         <div class="container">
             <router-view />
             <footer>
@@ -17,6 +18,7 @@
 <script setup>
     import { useToastStore } from './stores/toastStore'
     import ToastNotification from './components/ToastNotification.vue'
+    import ParticleBackground from './components/ParticleBackground.vue'
 
     const toastStore = useToastStore()
 </script>

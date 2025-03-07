@@ -488,7 +488,7 @@ label {
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  height: 180px; /* 设置固定高度与其他卡片一致 */
+  height: 160px; /* 设置固定高度与其他卡片一致 */
 }
 
 .add-tool-card::before,
