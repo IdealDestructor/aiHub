@@ -3,21 +3,9 @@
     <ParticleBackground />
     <div class="container">
       <router-view />
-      <footer>
-        <p>
-          © {{ new Date().getFullYear() }} AIHub By
-          <a
-            href="https://github.com/IdealDestructor"
-            style="color: white; text-decoration: none"
-            >Francis</a
-          >
-        </p>
-        <nav class="footer-nav">
-          <router-link to="/about">About</router-link>
-        </nav>
-      </footer>
     </div>
     <ToastNotification v-bind="toastStore.toast" />
+    <AppFooter />
   </div>
 </template>
 
@@ -25,6 +13,7 @@
 import { useToastStore } from "./stores/toastStore";
 import ToastNotification from "./components/ToastNotification.vue";
 import ParticleBackground from "./components/ParticleBackground.vue";
+import AppFooter from "@/components/AppFooter.vue";
 
 const toastStore = useToastStore();
 </script>
@@ -83,5 +72,15 @@ footer {
   :root {
     --container-width: 1680px;
   }
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
 }
 </style>
