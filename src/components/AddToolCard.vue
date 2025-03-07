@@ -488,6 +488,7 @@ label {
   position: relative;
   overflow: hidden;
   cursor: pointer;
+  height: 180px; /* 设置固定高度与其他卡片一致 */
 }
 
 .add-tool-card::before,
@@ -521,7 +522,7 @@ label {
 }
 
 .manage-tool-card {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
 .modal-overlay {
