@@ -9,6 +9,11 @@ const routes = [
       title: "AIHub | 一站式 AI 工具平台",
     },
   },
+  //重定向
+  {
+    path: "/aiHub",
+    redirect: "/",
+  },
   {
     path: "/about",
     name: "about",
