@@ -2,14 +2,14 @@
   <footer class="app-footer">
     <div class="footer-container">
       <div class="footer-content">
-        <div class="footer-logo">
+        <router-link to="/" class="footer-logo">
           <img
             src="@/assets/logo.svg"
             alt="aiHub Logo"
             class="footer-logo-img"
           />
           <span>AIHub</span>
-        </div>
+        </router-link>
 
         <div class="footer-links">
           <a
@@ -20,7 +20,7 @@
             <i class="fab fa-github"></i>
           </a>
           <a href="/about" class="footer-link">关于</a>
-          <a href="#" class="footer-link">隐私政策</a>
+          <router-link to="/privacy" class="footer-link">隐私政策</router-link>
         </div>
       </div>
     </div>
@@ -51,6 +51,13 @@
 .footer-logo {
   display: flex;
   align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.footer-logo:hover {
+  opacity: 0.85;
 }
 
 .footer-logo-img {

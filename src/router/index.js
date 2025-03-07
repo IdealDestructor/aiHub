@@ -1,5 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router";
 
+// 添加隐私政策路由
+import PrivacyPolicy from "../views/PrivacyPolicy.vue";
+
 const routes = [
   {
     path: "/",
@@ -24,6 +27,11 @@ const routes = [
     meta: {
       title: "AIHub | 关于我们",
     },
+  },
+  {
+    path: "/privacy",
+    name: "PrivacyPolicy",
+    component: PrivacyPolicy,
   },
   {
     path: "/:pathMatch(.*)*",

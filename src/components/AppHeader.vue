@@ -2,7 +2,9 @@
   <header class="app-header">
     <div class="logo-container">
       <img src="@/assets/logo.svg" alt="aiHub Logo" class="app-logo" />
-      <h1 class="app-title">AIHub</h1>
+      <router-link to="/" class="title-link">
+        <h1 class="app-title">AIHub</h1>
+      </router-link>
     </div>
     <p>一站式访问所有顶尖 AI 工具</p>
   </header>
@@ -79,5 +81,15 @@ p {
 
 .app-title {
   /* 标题样式 */
+}
+
+.title-link {
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.title-link:hover {
+  opacity: 0.85;
 }
 </style>
