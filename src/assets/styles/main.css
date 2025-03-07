@@ -1,64 +1,64 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
 }
 
 :root {
-    --primary-color: #6d5aff;
-    --secondary-color: #a5b4fc;
-    --background-color: #0b0b1a;
-    --card-color: rgba(30, 32, 56, 0.6);
-    --text-primary: #f9fafb;
-    --text-secondary: #cbd5e1;
-    --border-color: rgba(99, 102, 241, 0.3);
-    --shadow: 0 4px 20px rgba(123, 97, 255, 0.3);
-    --glow: 0 0 15px rgba(123, 97, 255, 0.5);
-    --transition: all 0.3s ease;
-    --glass-effect: blur(10px);
-    --glass-bg: rgba(30, 32, 56, 0.5);
-    --glass-border: rgba(99, 102, 241, 0.2);
+  --primary-color: #6d5aff;
+  --secondary-color: #a5b4fc;
+  --background-color: #0b0b1a;
+  --card-color: rgba(30, 32, 56, 0.4); /* 增加卡片透明度 */
+  --text-primary: #f9fafb;
+  --text-secondary: #cbd5e1;
+  --border-color: rgba(99, 102, 241, 0.3);
+  --shadow: 0 4px 20px rgba(123, 97, 255, 0.3);
+  --glow: 0 0 15px rgba(123, 97, 255, 0.5);
+  --transition: all 0.3s ease;
+  --glass-effect: blur(1px);
+  --glass-bg: rgba(30, 32, 56, 0.5);
+  --glass-border: rgba(99, 102, 241, 0.2);
 }
 
 body {
-    background-color: var(--background-color);
-    color: var(--text-primary);
-    line-height: 1.6;
-    position: relative;
-    overflow-x: hidden;
+  background-color: var(--background-color);
+  color: var(--text-primary);
+  line-height: 1.6;
+  position: relative;
+  overflow-x: hidden;
 }
 
 /* 毛玻璃效果卡片样式 */
 .glass-card {
-    background-color: var(--glass-bg);
-    backdrop-filter: var(--glass-effect);
-    -webkit-backdrop-filter: var(--glass-effect);
-    border: 1px solid var(--glass-border);
-    border-radius: 16px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-    transition: var(--transition);
+  background-color: var(--glass-bg);
+  backdrop-filter: var(--glass-effect);
+  -webkit-backdrop-filter: var(--glass-effect);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: var(--transition);
 }
 
 .glass-card:hover {
-    box-shadow: 0 8px 25px rgba(123, 97, 255, 0.25);
-    border-color: rgba(109, 90, 255, 0.4);
+  box-shadow: 0 8px 25px rgba(123, 97, 255, 0.25);
+  border-color: rgba(109, 90, 255, 0.4);
 }
 
 /* 毛玻璃按钮样式 */
 .glass-btn {
-    background-color: rgba(30, 32, 56, 0.4);
-    backdrop-filter: var(--glass-effect);
-    -webkit-backdrop-filter: var(--glass-effect);
-    border: 1px solid var(--glass-border);
-    color: var(--text-secondary);
-    transition: var(--transition);
+  background-color: rgba(30, 32, 56, 0.4);
+  backdrop-filter: var(--glass-effect);
+  -webkit-backdrop-filter: var(--glass-effect);
+  border: 1px solid var(--glass-border);
+  color: var(--text-secondary);
+  transition: var(--transition);
 }
 
 .glass-btn:hover {
-    background-color: rgba(40, 42, 66, 0.6);
-    border-color: var(--primary-color);
-    color: white;
+  background-color: rgba(40, 42, 66, 0.6);
+  border-color: var(--primary-color);
+  color: white;
 }
 
 /* 其他全局样式... */

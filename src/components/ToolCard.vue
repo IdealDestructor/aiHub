@@ -94,7 +94,7 @@
     }
     
     .tool-card {
-        background-color: var(--card-color);
+        background-color: rgba(30, 32, 56, 0.4); /* 增加透明度 */
         border-radius: 16px;
         padding: 1.8rem;
         box-shadow: var(--shadow);
@@ -287,7 +287,7 @@
         display: flex;
         align-items: center;
         padding: 12px 15px;
-        background: rgba(30, 32, 56, 0.4);
+        background: rgba(30, 32, 56, 0.3); /* 增加透明度 */
         border-bottom: 1px solid var(--glass-border);
         backdrop-filter: var(--glass-effect);
         -webkit-backdrop-filter: var(--glass-effect);

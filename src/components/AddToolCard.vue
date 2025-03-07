@@ -473,7 +473,7 @@ label {
 
 .add-tool-card,
 .manage-tool-card {
-  background-color: var(--card-color);
+  background-color: rgba(30, 32, 56, 0.4); /* 增加透明度 */
   border-radius: 16px;
   padding: 1.8rem;
   box-shadow: var(--shadow);

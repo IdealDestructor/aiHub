@@ -39,7 +39,7 @@
     .favorites-section {
         position: relative;
         padding: 1.5rem;
-        background: rgba(20, 22, 35, 0.4);
+        background: rgba(20, 22, 35, 0.3); /* 增加透明度 */
         border-radius: 16px;
         border: 1px solid var(--glass-border);
         backdrop-filter: var(--glass-effect);
@@ -76,7 +76,7 @@
         text-align: center;
         padding: 1.5rem;
         color: var(--text-secondary);
-        background: rgba(30, 32, 56, 0.2);
+        background: rgba(30, 32, 56, 0.15); /* 增加透明度 */
         border-radius: 8px;
         border: 1px dashed var(--border-color);
         backdrop-filter: var(--glass-effect);

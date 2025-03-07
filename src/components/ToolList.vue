@@ -65,7 +65,7 @@ div:not([class]), p {
   grid-column: 1 / -1;
   text-align: center;
   padding: 2rem;
-  background: rgba(30, 32, 56, 0.3);
+  background: rgba(30, 32, 56, 0.2); /* 增加透明度 */
   border-radius: 8px;
   color: var(--text-secondary);
   backdrop-filter: blur(5px);
