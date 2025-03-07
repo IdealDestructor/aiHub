@@ -4,7 +4,7 @@ name: Deploy static content to Pages
 on:
   # 仅在推送到默认分支时运行。
   push:
-    branches: ['master']
+    branches: ['main']
 
   # 这个选项可以使你手动在 Action tab 页面触发工作流
   workflow_dispatch:
@@ -31,20 +31,20 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Set up Node
-        uses: actions/setup-node@v3
-      - name: pnpm
-        uses: pnpm/action-setup@v2
+        uses: actions/setup-node@v22
+      - name: npm
+        uses: npm/action-setup@v2
         with:
           version: 7
       - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v22
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'pnpm'
+          cache: 'npm'
       - name: Install dependencies
-        run: pnpm install --no-frozen-lockfile && pnpm install
+        run: npm install --no-frozen-lockfile && npm install
       - name: Build
-        run: pnpm run build
+        run: npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
