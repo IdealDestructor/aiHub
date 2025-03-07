@@ -29,4 +29,7 @@ export default defineConfig({
   optimizeDeps: {
     include: ["vue", "vue-router", "pinia"], // 预构建这些频繁使用的包
   },
+  build: {
+    outDir: "dist", // 确保与工作流中的 publish_dir 一致
+  },
 });
