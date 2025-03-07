@@ -10,6 +10,14 @@ const routes = [
     },
   },
   {
+    path: "/aiHub",
+    name: "aiHub",
+    component: () => import("../views/HomePage.vue"),
+    meta: {
+      title: "AIHub | 一站式 AI 工具平台",
+    },
+  },
+  {
     path: "/about",
     name: "about",
     component: () => import("../views/AboutPage.vue"),
