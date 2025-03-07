@@ -3,7 +3,7 @@ import vue from "@vitejs/plugin-vue";
 import path from "path";
 
 export default defineConfig({
-  base: "/aiHub", // 自定义域名使用根路径
+  base: "/aiHub/", // 自定义域名使用根路径
   plugins: [vue()],
   resolve: {
     alias: {
