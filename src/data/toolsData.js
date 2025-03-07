@@ -58,7 +58,7 @@ export const tools = [
     url: "https://gemini.google.com",
     icon: "fa-solid fa-gem",
     iconBg: "#4285f4",
-    categories: ["图像生成", "聊天对话", "内容创作"],
+    categories: ["多模态", "图像生成", "聊天对话"],
   },
   {
     id: "sd3",
@@ -309,4 +309,5 @@ export const allCategories = [
   "搜索引擎",
   "社交助手",
   "娱乐服务",
+  "多模态"
 ];

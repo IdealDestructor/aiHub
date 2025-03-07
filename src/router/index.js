@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 
 // 添加隐私政策路由
 import PrivacyPolicy from "../views/PrivacyPolicy.vue";
+import AboutPage from "../views/AboutPage.vue";
 
 const routes = [
   {
@@ -22,16 +23,19 @@ const routes = [
   },
   {
     path: "/about",
-    name: "about",
-    component: () => import("../views/AboutPage.vue"),
+    name: "aboutUs",
+    component: AboutPage,
     meta: {
-      title: "AIHub | 关于我们",
+      title: "AIHub | 关于",
     },
   },
   {
     path: "/privacy",
     name: "PrivacyPolicy",
     component: PrivacyPolicy,
+    meta: {
+      title: "AIHub | 隐私政策",
+    },
   },
   {
     path: "/:pathMatch(.*)*",
