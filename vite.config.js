@@ -3,7 +3,7 @@ import vue from "@vitejs/plugin-vue";
 import path from "path";
 
 export default defineConfig({
-  base: "/", // 显式指定基础路径
+  base: "/aiHub/", // 替换为您的仓库名称
   plugins: [vue()],
   resolve: {
     alias: {
