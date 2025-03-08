@@ -73,7 +73,7 @@ p {
 .app-logo {
   height: 58px;
   margin-right: 8px;
-  transform: translateY(2px);
+  transform: translateY(0px);
 }
 
 .app-title {
